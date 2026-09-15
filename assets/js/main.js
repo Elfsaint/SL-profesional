@@ -1,5 +1,5 @@
 /* ============================================================
-   Santiago Lope — Interacciones globales del sitio
+   Santiago Lope — Interacciones globales e integración con WhatsApp
    ============================================================ */
 (function () {
     'use strict';
@@ -41,14 +41,50 @@
         onScroll();
     }
 
-    /* ---------- Formularios de demostración (sitio estático) ---------- */
-    document.querySelectorAll('form[data-demo-form]').forEach(function (form) {
-        form.addEventListener('submit', function (e) {
+    /* ---------- Envío del Formulario vía WhatsApp ---------- */
+    var contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        var statusDiv = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            var msg = form.getAttribute('data-demo-message') ||
-                '¡Solicitud enviada con éxito! Me pondré en contacto pronto.';
-            alert(msg);
-            form.reset();
+
+            var nombre = document.getElementById('nombre').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var servicio = document.getElementById('servicio').value;
+            var mensaje = document.getElementById('mensaje').value.trim();
+
+            if (!nombre || !email || !mensaje) {
+                if (statusDiv) {
+                    statusDiv.classList.remove('hidden', 'bg-emerald-900/50', 'text-emerald-300', 'border-emerald-700');
+                    statusDiv.classList.add('border', 'bg-red-900/50', 'text-red-300', 'border-red-700');
+                    statusDiv.innerHTML = '<i class="fa-solid fa-circle-exclamation mr-2"></i>Por favor, completa todos los campos requeridos.';
+                }
+                return;
+            }
+
+            var text = "*Consulta desde el Sitio Web*\n\n" +
+                "👤 *Nombre:* " + nombre + "\n" +
+                "✉️ *Correo:* " + email + "\n" +
+                "📌 *Área de interés:* " + servicio + "\n\n" +
+                "📝 *Mensaje:*\n" + mensaje;
+
+            var phone = "51937497557"; // Número oficial de Santiago Lope
+            var waUrl = "https://api.whatsapp.com/send?phone=" + phone + "&text=" + encodeURIComponent(text);
+
+            if (statusDiv) {
+                statusDiv.classList.remove('hidden', 'bg-red-900/50', 'text-red-300', 'border-red-700');
+                statusDiv.classList.add('border', 'bg-emerald-900/50', 'text-emerald-300', 'border-emerald-700');
+                statusDiv.innerHTML = '<i class="fa-brands fa-whatsapp mr-2"></i>Redirigiendo a WhatsApp con tu mensaje formateado...';
+            }
+
+            // Abrir WhatsApp en pestaña nueva
+            window.open(waUrl, '_blank');
+
+            // Resetear el formulario después del envío
+            setTimeout(function () {
+                contactForm.reset();
+            }, 1000);
         });
-    });
+    }
 })();
