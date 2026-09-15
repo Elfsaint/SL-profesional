@@ -72,21 +72,21 @@
         <!-- Servicios -->
         <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="reveal d1 card-animated bg-cardBg border border-primary/40 p-8 rounded-3xl space-y-4 shadow-xl">
-                <div class="icon-float w-12 h-12 bg-primary/20 rounded-xl items-center justify-center text-primary text-xl">
+                <div class="icon-float w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center text-primary text-xl">
                     <i class="fa-solid fa-code"></i>
                 </div>
                 <h3 class="text-2xl font-bold text-white">Desarrollo Web & UI/UX</h3>
                 <p class="text-slate-400 leading-relaxed text-sm">Creación de sitios web estáticos y corporativos ultrarrápidos, optimizados para SEO y dispositivos móviles, con diseño de interfaz moderno y elegante.</p>
             </div>
             <div class="reveal d2 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl space-y-4">
-                <div class="icon-float w-12 h-12 bg-indigo-500/10 rounded-xl items-center justify-center text-indigo-400 text-xl" style="animation-delay:.5s;">
+                <div class="icon-float w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center text-indigo-400 text-xl" style="animation-delay:.5s;">
                     <i class="fa-solid fa-sitemap"></i>
                 </div>
                 <h3 class="text-2xl font-bold text-white">Estructuración Organizacional</h3>
                 <p class="text-slate-400 leading-relaxed text-sm">Definición de roles, áreas operativas y gobernanza interna para capítulos estudiantiles, asociaciones, startups e iniciativas académicas.</p>
             </div>
             <div class="reveal d3 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl space-y-4">
-                <div class="icon-float w-12 h-12 bg-teal-500/10 rounded-xl items-center justify-center text-teal-400 text-xl" style="animation-delay:1s;">
+                <div class="icon-float w-12 h-12 bg-teal-500/10 rounded-xl flex items-center justify-center text-teal-400 text-xl" style="animation-delay:1s;">
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <h3 class="text-2xl font-bold text-white">Analítica & Power BI</h3>
@@ -143,35 +143,41 @@
         <section id="contacto" class="relative z-10 bg-cardBg border border-slate-800 p-8 md:p-12 rounded-3xl max-w-3xl mx-auto shadow-2xl">
             <div class="text-center space-y-3 mb-8">
                 <h2 class="reveal text-3xl font-extrabold text-white">Solicita una Consulta o Propuesta</h2>
-                <p class="reveal d1 text-slate-400 text-sm">Conversemos sobre tu proyecto web, evento o asesoría organizacional.</p>
+                <p class="reveal d1 text-slate-400 text-sm">Completa el formulario para enviarme tu requerimiento directamente a WhatsApp.</p>
             </div>
 
-            <form class="space-y-6" data-demo-form data-demo-message="¡Solicitud enviada con éxito! Me pondré en contacto pronto.">
+            <form id="contact-form" class="space-y-6">
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label for="nombre" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Nombre completo</label>
+                        <label for="nombre" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Nombre completo *</label>
                         <input id="nombre" name="nombre" type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none transition-colors" placeholder="Tu nombre">
                     </div>
                     <div>
-                        <label for="email" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Correo electrónico</label>
+                        <label for="email" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Correo electrónico *</label>
                         <input id="email" name="email" type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none transition-colors" placeholder="correo@ejemplo.com">
                     </div>
                 </div>
                 <div>
                     <label for="servicio" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Área de interés</label>
                     <select id="servicio" name="servicio" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none transition-colors">
-                        <option>Desarrollo Web & UI/UX</option>
-                        <option>Producción y Logística de Eventos</option>
-                        <option>Estructuración Organizacional</option>
-                        <option>Analítica de Datos & Power BI</option>
+                        <option value="Desarrollo Web & UI/UX">Desarrollo Web & UI/UX</option>
+                        <option value="Producción y Logística de Eventos">Producción y Logística de Eventos</option>
+                        <option value="Estructuración Organizacional">Estructuración Organizacional</option>
+                        <option value="Analítica de Datos & Power BI">Analítica de Datos & Power BI</option>
                     </select>
                 </div>
                 <div>
-                    <label for="mensaje" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Detalles del proyecto o requerimiento</label>
+                    <label for="mensaje" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Detalles del proyecto o requerimiento *</label>
                     <textarea id="mensaje" name="mensaje" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none transition-colors" placeholder="Cuéntame sobre tu proyecto..."></textarea>
                 </div>
-                <button type="submit" class="pulse-cta w-full py-4 bg-primary hover:bg-sky-600 text-white font-bold rounded-xl shadow-lg shadow-primary/30 transition-all">
-                    Enviar Mensaje
+
+                <!-- Notificación de estado -->
+                <div id="form-status" class="hidden p-4 rounded-xl text-xs font-medium"></div>
+
+                <!-- Botón de Envío Único (Enviar Mensaje -> WhatsApp) -->
+                <button type="submit" class="pulse-cta w-full py-4 bg-primary hover:bg-sky-600 text-white font-bold rounded-xl shadow-lg shadow-primary/30 flex items-center justify-center space-x-2 transition-all">
+                    <span>Enviar Mensaje</span>
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
                 </button>
             </form>
         </section>
