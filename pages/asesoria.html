@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Asesoría independiente en desarrollo web, estructuración organizacional y analítica de datos con Power BI. Solicita una consulta con Santiago Lope.">
+    <title>Asesoría & Desarrollo Web | Santiago Lope</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#0ea5e9', darkBg: '#0b0f19', cardBg: '#111827' } }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="icon" type="image/webp" href="../assets/logo.webp">
+    <script src="../assets/js/main.js" defer></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800 transition-shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html" class="flex items-center space-x-3 group">
+                    <img src="../assets/logo.webp" alt="Logo SL" class="h-12 w-12 object-contain rounded-xl bg-slate-800/90 p-1 border border-primary/50 shadow-sm group-hover:border-primary transition-colors">
+                    <div>
+                        <span class="text-lg font-bold text-white group-hover:text-primary transition-colors">Santiago Lope</span>
+                        <span class="text-xs text-slate-400">Logística & Asesoría</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+                    <a href="../index.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Inicio</a>
+                    <a href="sobre-mi.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Sobre Mí</a>
+                    <a href="eventos.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Eventos</a>
+                    <a href="asesoria.html" class="nav-link active text-sm font-medium text-primary">Asesoría</a>
+                    <a href="trayectoria.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Trayectoria</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="#contacto" class="pulse-cta px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-blue-600 rounded-xl shadow-lg shadow-primary/20 transition-all">Agendar Sesión</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button data-menu-btn="mobile-menu" aria-expanded="false" aria-controls="mobile-menu" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="../index.html" class="block text-base font-medium text-slate-300">Inicio</a>
+            <a href="sobre-mi.html" class="block text-base font-medium text-slate-300">Sobre Mí</a>
+            <a href="eventos.html" class="block text-base font-medium text-slate-300">Eventos</a>
+            <a href="asesoria.html" class="block text-base font-medium text-primary">Asesoría</a>
+            <a href="trayectoria.html" class="block text-base font-medium text-slate-300">Trayectoria</a>
+        </div>
+    </header>
+
+    <main class="relative overflow-hidden pt-32 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <!-- Orbes de fondo (tema índigo/violeta) -->
+        <div class="orb orb-indigo" style="width:420px;height:420px;top:0%;left:-10%;"></div>
+        <div class="orb orb-violet" style="width:300px;height:300px;top:44%;right:-8%;animation-duration:24s;"></div>
+        <div class="orb orb-blue" style="width:240px;height:240px;bottom:6%;left:20%;animation-duration:28s;"></div>
+
+        <!-- Encabezado -->
+        <div class="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+            <h1 class="reveal text-4xl font-extrabold text-white">Asesoría Independiente & <span class="text-animate">Desarrollo Web</span></h1>
+            <p class="reveal d1 text-slate-400">Soluciones tecnológicas a la medida, estructuración de procesos, analítica de datos y consultoría organizativa para instituciones y proyectos.</p>
+        </div>
+
+        <!-- Servicios -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="reveal d1 card-animated bg-cardBg border border-primary/40 p-8 rounded-3xl space-y-4 shadow-xl">
+                <div class="icon-float w-12 h-12 bg-primary/20 rounded-xl items-center justify-center text-primary text-xl">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white">Desarrollo Web & UI/UX</h3>
+                <p class="text-slate-400 leading-relaxed text-sm">Creación de sitios web estáticos y corporativos ultrarrápidos, optimizados para SEO y dispositivos móviles, con diseño de interfaz moderno y elegante.</p>
+            </div>
+            <div class="reveal d2 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl space-y-4">
+                <div class="icon-float w-12 h-12 bg-indigo-500/10 rounded-xl items-center justify-center text-indigo-400 text-xl" style="animation-delay:.5s;">
+                    <i class="fa-solid fa-sitemap"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white">Estructuración Organizacional</h3>
+                <p class="text-slate-400 leading-relaxed text-sm">Definición de roles, áreas operativas y gobernanza interna para capítulos estudiantiles, asociaciones, startups e iniciativas académicas.</p>
+            </div>
+            <div class="reveal d3 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl space-y-4">
+                <div class="icon-float w-12 h-12 bg-teal-500/10 rounded-xl items-center justify-center text-teal-400 text-xl" style="animation-delay:1s;">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white">Analítica & Power BI</h3>
+                <p class="text-slate-400 leading-relaxed text-sm">Modelos de costos, control presupuestal y tableros ejecutivos en Power BI y Excel Avanzado para decisiones informadas.</p>
+            </div>
+        </div>
+
+        <!-- Detalle de desarrollo web -->
+        <section class="relative z-10 bg-cardBg border border-slate-800 p-8 md:p-12 rounded-3xl space-y-8">
+            <div class="space-y-2">
+                <h2 class="reveal text-2xl font-bold text-white">Servicios de Desarrollo Web</h2>
+                <p class="reveal d1 text-slate-400 text-sm">Sitios estáticos de alto rendimiento para marcas personales, eventos académicos y organizaciones.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li class="reveal d1 bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
+                        <i class="fa-solid fa-bolt text-primary mt-0.5"></i>
+                        <span><strong class="text-white">Sitios estáticos ultrarrápidos:</strong> arquitectura sin servidores, carga instantánea y hosting económico en Vercel, Netlify o GitHub Pages.</span>
+                    </li>
+                    <li class="reveal d2 bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
+                        <i class="fa-solid fa-mobile-screen text-teal-400 mt-0.5"></i>
+                        <span><strong class="text-white">Diseño responsivo & UI/UX:</strong> interfaces modernas con Tailwind CSS, animaciones cuidadas y experiencia fluida en móvil y escritorio.</span>
+                    </li>
+                    <li class="reveal d3 bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
+                        <i class="fa-solid fa-magnifying-glass-chart text-indigo-400 mt-0.5"></i>
+                        <span><strong class="text-white">SEO & metadatos:</strong> estructura semántica, OpenGraph y optimización de imágenes para posicionamiento y compartición en redes.</span>
+                    </li>
+                </ul>
+                <ul class="space-y-3 text-sm text-slate-300">
+                    <li class="reveal d2 bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
+                        <i class="fa-solid fa-layer-group text-fuchsia-400 mt-0.5"></i>
+                        <span><strong class="text-white">Arquitectura escalable:</strong> organización por carpetas (assets, pages), CSS/JS centralizado y componentes reutilizables.</span>
+                    </li>
+                    <li class="reveal d3 bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
+                        <i class="fa-solid fa-universal-access text-primary mt-0.5"></i>
+                        <span><strong class="text-white">Accesibilidad:</strong> navegación semántica, atributos ARIA y respeto por la preferencia de movimiento reducido.</span>
+                    </li>
+                    <li class="reveal d4 bg-slate-900 border border-slate-800 p-4 rounded-xl flex items-start space-x-3">
+                        <i class="fa-solid fa-wand-magic-sparkles text-teal-400 mt-0.5"></i>
+                        <span><strong class="text-white">Animaciones profesionales:</strong> micro-interacciones, revelado al scroll y fondos dinámicos sin sacrificar rendimiento.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="reveal d3 flex flex-wrap gap-2 pt-2">
+                <span class="px-3 py-1 bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-full">HTML5 Semántico</span>
+                <span class="px-3 py-1 bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-full">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-full">JavaScript ES6+</span>
+                <span class="px-3 py-1 bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-full">CSS Animations</span>
+                <span class="px-3 py-1 bg-slate-900 border border-slate-700 text-slate-300 text-xs rounded-full">Git & Despliegue Estático</span>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="relative z-10 bg-cardBg border border-slate-800 p-8 md:p-12 rounded-3xl max-w-3xl mx-auto shadow-2xl">
+            <div class="text-center space-y-3 mb-8">
+                <h2 class="reveal text-3xl font-extrabold text-white">Solicita una Consulta o Propuesta</h2>
+                <p class="reveal d1 text-slate-400 text-sm">Conversemos sobre tu proyecto web, evento o asesoría organizacional.</p>
+            </div>
+
+            <form class="space-y-6" data-demo-form data-demo-message="¡Solicitud enviada con éxito! Me pondré en contacto pronto.">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label for="nombre" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Nombre completo</label>
+                        <input id="nombre" name="nombre" type="text" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none transition-colors" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Correo electrónico</label>
+                        <input id="email" name="email" type="email" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none transition-colors" placeholder="correo@ejemplo.com">
+                    </div>
+                </div>
+                <div>
+                    <label for="servicio" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Área de interés</label>
+                    <select id="servicio" name="servicio" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none transition-colors">
+                        <option>Desarrollo Web & UI/UX</option>
+                        <option>Producción y Logística de Eventos</option>
+                        <option>Estructuración Organizacional</option>
+                        <option>Analítica de Datos & Power BI</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="mensaje" class="block text-xs font-semibold uppercase text-slate-400 mb-2">Detalles del proyecto o requerimiento</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:border-primary focus:outline-none transition-colors" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                </div>
+                <button type="submit" class="pulse-cta w-full py-4 bg-primary hover:bg-sky-600 text-white font-bold rounded-xl shadow-lg shadow-primary/30 transition-all">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-cardBg border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        © 2026 Santiago Lope. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

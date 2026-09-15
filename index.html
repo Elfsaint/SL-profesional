@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santiago Lope — Coordinador de Logística del NASA International Space Apps Challenge Arequipa. Producción de eventos académicos y corporativos, asesoría independiente y desarrollo web.">
+    <title>Santiago Lope | Logística de Eventos, Asesoría & Desarrollo Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        darkBg: '#0b0f19',
+                        cardBg: '#111827'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+    <script src="assets/js/main.js" defer></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- ================= NAVBAR SUPERIOR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800 transition-shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <img src="assets/logo.webp" alt="Logo SL" class="h-12 w-12 object-contain rounded-xl bg-slate-800/90 p-1 border border-primary/50 shadow-sm group-hover:border-primary transition-colors">
+                    <div>
+                        <span class="text-lg font-bold tracking-tight block text-white group-hover:text-primary transition-colors">Santiago Lope</span>
+                        <span class="text-xs text-slate-400 block">Logística & Asesoría</span>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+                    <a href="index.html" class="nav-link active text-sm font-medium text-primary">Inicio</a>
+                    <a href="pages/sobre-mi.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Sobre Mí</a>
+                    <a href="pages/eventos.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Eventos</a>
+                    <a href="pages/asesoria.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Asesoría</a>
+                    <a href="pages/trayectoria.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Trayectoria</a>
+                </nav>
+
+                <div class="hidden md:flex items-center">
+                    <a href="pages/asesoria.html#contacto" class="pulse-cta px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-blue-600 rounded-xl shadow-lg shadow-primary/20 hover:shadow-primary/40 transition-all transform hover:-translate-y-0.5">
+                        Agendar Sesión
+                    </a>
+                </div>
+
+                <div class="md:hidden flex items-center">
+                    <button data-menu-btn="mobile-menu" aria-expanded="false" aria-controls="mobile-menu" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="index.html" class="block text-base font-medium text-primary">Inicio</a>
+            <a href="pages/sobre-mi.html" class="block text-base font-medium text-slate-300 hover:text-primary">Sobre Mí</a>
+            <a href="pages/eventos.html" class="block text-base font-medium text-slate-300 hover:text-primary">Eventos</a>
+            <a href="pages/asesoria.html" class="block text-base font-medium text-slate-300 hover:text-primary">Asesoría</a>
+            <a href="pages/trayectoria.html" class="block text-base font-medium text-slate-300 hover:text-primary">Trayectoria</a>
+            <div class="pt-2">
+                <a href="pages/asesoria.html#contacto" class="block w-full text-center py-2.5 font-semibold text-white bg-primary rounded-xl shadow-md">Agendar Sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="relative overflow-hidden pt-32 pb-20 md:pt-44 md:pb-32">
+        <!-- Orbes de fondo animados -->
+        <div class="orb orb-blue" style="width:460px;height:460px;top:8%;left:-6%;"></div>
+        <div class="orb orb-violet" style="width:380px;height:380px;bottom:4%;right:-4%;animation-duration:22s;"></div>
+        <div class="orb orb-pink" style="width:240px;height:240px;top:46%;right:22%;animation-duration:26s;"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="reveal inline-flex items-center space-x-2 px-3 py-1 bg-primary/10 border border-primary/20 rounded-full text-primary text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-satellite-dish icon-float"></i>
+                        <span>Logística Espacial & Corporativa</span>
+                    </div>
+
+                    <h1 class="reveal d1 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Logística de precisión para <span class="text-animate">eventos de alto impacto</span>.
+                    </h1>
+
+                    <p class="reveal d2 text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0">
+                        Coordinador de Logística en <strong class="text-white">NASA International Space Apps Challenge Arequipa</strong>. Especialista en gestión financiera, operativa y estructuración organizacional para el sector académico y corporativo.
+                    </p>
+
+                    <div class="reveal d3 flex flex-col sm:flex-row justify-center lg:justify-start space-y-3 sm:space-y-0 sm:space-x-4 pt-4">
+                        <a href="pages/eventos.html" class="pulse-cta px-8 py-3.5 text-base font-bold text-white bg-primary rounded-xl shadow-lg shadow-primary/30 hover:bg-sky-600 transition-all text-center">
+                            Explorar Servicios de Eventos
+                        </a>
+                        <a href="pages/asesoria.html" class="px-8 py-3.5 text-base font-bold text-slate-200 bg-slate-800/80 hover:bg-slate-800 border border-slate-700 rounded-xl transition-all text-center">
+                            Asesoría Independiente
+                        </a>
+                    </div>
+
+                    <div class="reveal d4 grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl font-bold text-white">+10</p>
+                            <p class="text-xs text-slate-400">Eventos Dirigidos</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">NASA</p>
+                            <p class="text-xs text-slate-400">Space Apps Arequipa</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">+720h</p>
+                            <p class="text-xs text-slate-400">Especialización</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fotografía profesional -->
+                <div class="reveal d2 lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-80 sm:w-80 sm:h-96">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary via-indigo-500 to-fuchsia-500 rounded-3xl transform rotate-3 scale-105 opacity-30 blur-sm"></div>
+                        <div class="img-zoom relative w-full h-full bg-cardBg border-2 border-slate-700 rounded-3xl shadow-2xl">
+                            <img src="assets/foto_santiago.svg" alt="Fotografía profesional de Santiago Lope" class="w-full h-full object-cover rounded-3xl">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CINTA DE CONFIANZA ================= -->
+    <section class="py-12 bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="reveal text-xs font-semibold tracking-widest text-slate-400 uppercase mb-8">Experiencia validada en instituciones y organizaciones líderes</p>
+            <div class="reveal d1 flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-80">
+                <span class="text-slate-300 font-bold tracking-wider text-sm sm:text-base"><i class="fa-solid fa-rocket text-primary mr-2"></i> NASA Space Apps Arequipa</span>
+                <span class="text-slate-300 font-bold tracking-wider text-sm sm:text-base"><i class="fa-solid fa-graduation-cap text-indigo-400 mr-2"></i> UNSA Arequipa</span>
+                <span class="text-slate-300 font-bold tracking-wider text-sm sm:text-base"><i class="fa-solid fa-microchip text-teal-400 mr-2"></i> IEEE MTT-S UNSA</span>
+                <span class="text-slate-300 font-bold tracking-wider text-sm sm:text-base"><i class="fa-solid fa-building-columns text-fuchsia-400 mr-2"></i> Cámara de Comercio Arequipa</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PILARES DE SERVICIO ================= -->
+    <section class="py-24 relative overflow-hidden">
+        <div class="orb orb-teal" style="width:320px;height:320px;top:10%;right:-8%;animation-duration:24s;"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="reveal text-xs font-bold tracking-widest text-primary uppercase">Áreas de Especialización</h2>
+                <h3 class="reveal d1 text-3xl sm:text-4xl font-extrabold text-white">Soluciones integrales para potenciar proyectos</h3>
+                <p class="reveal d2 text-slate-400">Enfoque estratégico combinando ingeniería, control financiero y logística de alta precisión.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="reveal d1 card-animated bg-cardBg border border-slate-800 rounded-3xl p-8 group flex flex-col justify-between">
+                    <div>
+                        <div class="icon-float w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary text-2xl mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-3">Producción y Logística de Eventos</h4>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            Organización integral, gestión de espacios, control de recursos materiales, seguridad y coordinación de staff para hackathons, congresos y cumbres corporativas y académicas.
+                        </p>
+                    </div>
+                    <a href="pages/eventos.html" class="inline-flex items-center space-x-2 text-primary font-semibold group-hover:translate-x-1 transition-transform">
+                        <span>Conocer servicios de eventos</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+
+                <div class="reveal d2 card-animated bg-cardBg border border-slate-800 rounded-3xl p-8 group flex flex-col justify-between">
+                    <div>
+                        <div class="icon-float w-14 h-14 bg-indigo-600/10 rounded-2xl flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all" style="animation-delay:.6s;">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-white mb-3">Asesoría Organizativa, Financiera & Web</h4>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            Consultoría independiente en estructuración de equipos, control presupuestal, analítica con Power BI y desarrollo de sitios web estáticos de alto rendimiento.
+                        </p>
+                    </div>
+                    <a href="pages/asesoria.html" class="inline-flex items-center space-x-2 text-indigo-400 font-semibold group-hover:translate-x-1 transition-transform">
+                        <span>Solicitar asesoría</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-cardBg border-t border-slate-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <div class="flex items-center space-x-3">
+                    <img src="assets/logo.webp" alt="Logo SL" class="h-10 w-10 object-contain rounded-lg bg-slate-800 p-1">
+                    <span class="text-base font-bold text-white">Santiago Isaac Lope Condori</span>
+                </div>
+                <div class="flex space-x-6 text-slate-400">
+                    <a href="https://www.linkedin.com/in/santlopteleco/" target="_blank" rel="noopener" aria-label="LinkedIn" class="hover:text-primary transition-colors text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:slopec@unsa.edu.pe" aria-label="Correo institucional" class="hover:text-primary transition-colors text-xl"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+51937497557" aria-label="Teléfono" class="hover:text-primary transition-colors text-xl"><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <p class="text-xs text-slate-500 text-center md:text-right">
+                    © 2026 Santiago Lope. Todos los derechos reservados.<br>Diseñado para eventos académicos y corporativos.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

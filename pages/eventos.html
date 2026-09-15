@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Producción y logística de eventos académicos y corporativos: hackathons, congresos y cumbres. Historial de organización, staff y voluntariados de Santiago Lope.">
+    <title>Eventos y Producción | Santiago Lope</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#0ea5e9', darkBg: '#0b0f19', cardBg: '#111827' } }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="icon" type="image/webp" href="../assets/logo.webp">
+    <script src="../assets/js/main.js" defer></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800 transition-shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html" class="flex items-center space-x-3 group">
+                    <img src="../assets/logo.webp" alt="Logo SL" class="h-12 w-12 object-contain rounded-xl bg-slate-800/90 p-1 border border-primary/50 shadow-sm group-hover:border-primary transition-colors">
+                    <div>
+                        <span class="text-lg font-bold text-white group-hover:text-primary transition-colors">Santiago Lope</span>
+                        <span class="text-xs text-slate-400">Logística & Asesoría</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+                    <a href="../index.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Inicio</a>
+                    <a href="sobre-mi.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Sobre Mí</a>
+                    <a href="eventos.html" class="nav-link active text-sm font-medium text-primary">Eventos</a>
+                    <a href="asesoria.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Asesoría</a>
+                    <a href="trayectoria.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Trayectoria</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="asesoria.html#contacto" class="pulse-cta px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-blue-600 rounded-xl shadow-lg shadow-primary/20 transition-all">Agendar Sesión</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button data-menu-btn="mobile-menu" aria-expanded="false" aria-controls="mobile-menu" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="../index.html" class="block text-base font-medium text-slate-300">Inicio</a>
+            <a href="sobre-mi.html" class="block text-base font-medium text-slate-300">Sobre Mí</a>
+            <a href="eventos.html" class="block text-base font-medium text-primary">Eventos</a>
+            <a href="asesoria.html" class="block text-base font-medium text-slate-300">Asesoría</a>
+            <a href="trayectoria.html" class="block text-base font-medium text-slate-300">Trayectoria</a>
+        </div>
+    </header>
+
+    <main class="relative overflow-hidden pt-32 pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+        <!-- Orbes de fondo (tema azul/teal) -->
+        <div class="orb orb-blue" style="width:420px;height:420px;top:2%;right:-10%;"></div>
+        <div class="orb orb-teal" style="width:320px;height:320px;top:40%;left:-10%;animation-duration:24s;"></div>
+        <div class="orb orb-indigo" style="width:260px;height:260px;bottom:4%;right:16%;animation-duration:28s;"></div>
+
+        <!-- Encabezado -->
+        <div class="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+            <h1 class="reveal text-4xl font-extrabold text-white">Producción de Eventos, <span class="text-animate">Congresos & Voluntariados</span></h1>
+            <p class="reveal d1 text-slate-400">De la planificación al despliegue en vivo. Ejecución impecable para hackathons, congresos académicos, cumbres corporativas y staff técnico.</p>
+        </div>
+
+        <!-- Servicios -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="reveal d1 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl">
+                <div class="icon-float w-12 h-12 bg-primary/10 rounded-xl items-center justify-center text-primary text-xl mb-6">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Logística Integral</h3>
+                <p class="text-slate-400 text-sm">Gestión de recintos, equipamiento técnico, catering, acreditaciones y flujos de participantes.</p>
+            </div>
+            <div class="reveal d2 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl">
+                <div class="icon-float w-12 h-12 bg-teal-500/10 rounded-xl items-center justify-center text-teal-400 text-xl mb-6" style="animation-delay:.5s;">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Alianzas y Auspicios</h3>
+                <p class="text-slate-400 text-sm">Atracción de patrocinadores B2B, consecución de recursos, premios y gestión de convenios interinstitucionales.</p>
+            </div>
+            <div class="reveal d3 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl">
+                <div class="icon-float w-12 h-12 bg-indigo-500/10 rounded-xl items-center justify-center text-indigo-400 text-xl mb-6" style="animation-delay:1s;">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Operaciones en Vivo</h3>
+                <p class="text-slate-400 text-sm">Supervisión en sitio, manejo de contingencias, coordinación de staff y voluntarios durante el evento.</p>
+            </div>
+        </div>
+
+        <!-- Caso destacado -->
+        <div class="reveal relative z-10 card-animated bg-gradient-to-r from-slate-900 to-blue-950 border border-primary/30 p-8 md:p-12 rounded-3xl flex flex-col md:flex-row justify-between items-center">
+            <div class="space-y-4 max-w-xl mb-6 md:mb-0">
+                <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-bold uppercase rounded-full">Caso de Éxito Actual</span>
+                <h2 class="text-3xl font-extrabold text-white">NASA International Space Apps Challenge Arequipa</h2>
+                <p class="text-slate-300 text-sm">Coordinación de logística general, gestión de espacios, materiales y articulación de patrocinadores para la edición 2026.</p>
+            </div>
+            <a href="asesoria.html#contacto" class="pulse-cta px-6 py-3 bg-primary hover:bg-sky-600 text-white font-bold rounded-xl shadow-lg transition-all">
+                Cotizar tu Evento
+            </a>
+        </div>
+
+        <!-- Metodología -->
+        <div class="relative z-10 space-y-6">
+            <h2 class="reveal text-2xl font-bold text-white">Metodología de Trabajo</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="reveal d1 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-3xl font-extrabold text-primary/40">01</span>
+                    <h3 class="text-white font-bold">Planificación</h3>
+                    <p class="text-slate-400 text-xs">Presupuesto, cronograma y definición de requerimientos logísticos.</p>
+                </div>
+                <div class="reveal d2 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-3xl font-extrabold text-teal-400/40">02</span>
+                    <h3 class="text-white font-bold">Alianzas</h3>
+                    <p class="text-slate-400 text-xs">Atracción de auspicios, recursos y acuerdos interinstitucionales.</p>
+                </div>
+                <div class="reveal d3 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-3xl font-extrabold text-indigo-400/40">03</span>
+                    <h3 class="text-white font-bold">Despliegue</h3>
+                    <p class="text-slate-400 text-xs">Ejecución en sitio, coordinación de staff y gestión de contingencias.</p>
+                </div>
+                <div class="reveal d4 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-3xl font-extrabold text-fuchsia-400/40">04</span>
+                    <h3 class="text-white font-bold">Cierre</h3>
+                    <p class="text-slate-400 text-xs">Balance financiero, reporte de impacto y lecciones aprendidas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Historial de eventos -->
+        <section class="relative z-10 bg-cardBg border border-slate-800 p-8 md:p-12 rounded-3xl space-y-6">
+            <div class="space-y-2">
+                <h2 class="reveal text-2xl font-bold text-white">Historial de Congresos, Staff y Organización de Eventos</h2>
+                <p class="reveal d1 text-slate-400 text-sm">Eventos de gran envergadura donde he colaborado activamente como organizador, staff o voluntario.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                <div class="reveal d1 card-animated bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-primary font-bold">Sep 2025 | Organizador</span>
+                    <h3 class="text-white font-bold text-base">I Congreso Internacional Interdisciplinario de Derecho Urbanístico</h3>
+                    <p class="text-slate-400 text-xs">Ilustre Colegio de Abogados de Arequipa — 80 horas académicas de gestión y logística multi-día.</p>
+                </div>
+                <div class="reveal d2 card-animated bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-primary font-bold">Oct 2025 | Organizador</span>
+                    <h3 class="text-white font-bold text-base">Congreso Internacional de Derecho Penal “Lucha contra la Criminalidad”</h3>
+                    <p class="text-slate-400 text-xs">Ilustre Colegio de Abogados de Arequipa — 44 horas académicas de coordinación.</p>
+                </div>
+                <div class="reveal d3 card-animated bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-teal-400 font-bold">Jul 2025 | Voluntario Área de TI</span>
+                    <h3 class="text-white font-bold text-base">5ta Cumbre Nacional de Dirección de Proyectos — Perú Proyectando 2025</h3>
+                    <p class="text-slate-400 text-xs">Capítulos PMI Sur, Lima y Norte — soporte tecnológico durante la cumbre.</p>
+                </div>
+                <div class="reveal d4 card-animated bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-fuchsia-400 font-bold">Nov 2025 | Staff & Reconocimiento</span>
+                    <h3 class="text-white font-bold text-base">Con-Mujeres 2025 — 4ª Convención de Mujeres Empresarias</h3>
+                    <p class="text-slate-400 text-xs">Cámara de Comercio e Industria de Arequipa — apoyo logístico y organizativo reconocido oficialmente.</p>
+                </div>
+                <div class="reveal d5 card-animated bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-indigo-400 font-bold">Oct 2025 | Voluntario Técnico</span>
+                    <h3 class="text-white font-bold text-base">Paulet Rocketry Challenge 2025</h3>
+                    <p class="text-slate-400 text-xs">Space School / Qinti Space — competencia nacional de cohetería y divulgación STEAM.</p>
+                </div>
+                <div class="reveal d6 card-animated bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-teal-400 font-bold">Ago 2025 | Co-organizador</span>
+                    <h3 class="text-white font-bold text-base">Taller “Voto joven, voto firme”</h3>
+                    <p class="text-slate-400 text-xs">Hanns Seidel Stiftung — taller cívico de 2 días para participación juvenil.</p>
+                </div>
+                <div class="reveal d5 card-animated bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-primary font-bold">Sep 2024 | Asistente (80h)</span>
+                    <h3 class="text-white font-bold text-base">XXX CONEIMERA Lima 2024 — Congreso Nacional</h3>
+                    <p class="text-slate-400 text-xs">Universidad Nacional Tecnológica de Lima Sur — incluye mini-cursos de Machine Learning y Ciberdefensa.</p>
+                </div>
+                <div class="reveal d6 card-animated bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-indigo-400 font-bold">Feb 2025 | Voluntario</span>
+                    <h3 class="text-white font-bold text-base">2do Encuentro Empresarial: Mentalidad, Dinero y Negocios</h3>
+                    <p class="text-slate-400 text-xs">SAGGIA / ILS Safework S.A.C. — soporte operativo del evento empresarial.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-cardBg border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        © 2026 Santiago Lope. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

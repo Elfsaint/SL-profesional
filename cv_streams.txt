@@ -1,0 +1,18 @@
+﻿=== STREAM 0 (not flate) ===
+=== STREAM 575 (not flate) ===
+=== STREAM 3462 (not flate) ===
+=== STREAM 3636 (not flate) ===
+=== STREAM 5651 (not flate) ===
+=== STREAM 22128 (not flate) ===
+=== STREAM 36459 (not flate) ===
+=== STREAM 60100 (not flate) ===
+=== STREAM 75529 (not flate) ===
+=== STREAM 76344 (not flate) ===
+=== STREAM 77159 (not flate) ===
+=== STREAM 77972 (not flate) ===
+=== STREAM 78795 (not flate) ===
+=== STREAM 80392 (not flate) ===
+=== STREAM 82088 (not flate) ===
+=== STREAM 89697 (not flate) ===
+=== STREAM 90489 (not flate) ===
+

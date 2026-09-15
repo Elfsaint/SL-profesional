@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trayectoria de Santiago Lope: roles directivos en organizaciones, capítulos estudiantiles, asesorías estratégicas y coordinación logística del NASA Space Apps Challenge Arequipa.">
+    <title>Trayectoria y Roles | Santiago Lope</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: { colors: { primary: '#0ea5e9', darkBg: '#0b0f19', cardBg: '#111827' } }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="icon" type="image/webp" href="../assets/logo.webp">
+    <script src="../assets/js/main.js" defer></script>
+</head>
+<body class="bg-darkBg text-slate-100 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/90 backdrop-blur-md border-b border-slate-800 transition-shadow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="../index.html" class="flex items-center space-x-3 group">
+                    <img src="../assets/logo.webp" alt="Logo SL" class="h-12 w-12 object-contain rounded-xl bg-slate-800/90 p-1 border border-primary/50 shadow-sm group-hover:border-primary transition-colors">
+                    <div>
+                        <span class="text-lg font-bold text-white group-hover:text-primary transition-colors">Santiago Lope</span>
+                        <span class="text-xs text-slate-400">Logística & Asesoría</span>
+                    </div>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8" aria-label="Navegación principal">
+                    <a href="../index.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Inicio</a>
+                    <a href="sobre-mi.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Sobre Mí</a>
+                    <a href="eventos.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Eventos</a>
+                    <a href="asesoria.html" class="nav-link text-sm font-medium text-slate-300 hover:text-primary transition-colors">Asesoría</a>
+                    <a href="trayectoria.html" class="nav-link active text-sm font-medium text-primary">Trayectoria</a>
+                </nav>
+                <div class="hidden md:flex items-center">
+                    <a href="asesoria.html#contacto" class="pulse-cta px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-primary to-blue-600 rounded-xl shadow-lg shadow-primary/20 transition-all">Agendar Sesión</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button data-menu-btn="mobile-menu" aria-expanded="false" aria-controls="mobile-menu" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-cardBg border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="../index.html" class="block text-base font-medium text-slate-300">Inicio</a>
+            <a href="sobre-mi.html" class="block text-base font-medium text-slate-300">Sobre Mí</a>
+            <a href="eventos.html" class="block text-base font-medium text-slate-300">Eventos</a>
+            <a href="asesoria.html" class="block text-base font-medium text-slate-300">Asesoría</a>
+            <a href="trayectoria.html" class="block text-base font-medium text-primary">Trayectoria</a>
+        </div>
+    </header>
+
+    <main class="relative overflow-hidden pt-32 pb-20 max-w-5xl mx-auto px-4 space-y-10">
+        <!-- Orbes de fondo (tema teal/rosa) -->
+        <div class="orb orb-teal" style="width:400px;height:400px;top:2%;right:-12%;"></div>
+        <div class="orb orb-pink" style="width:280px;height:280px;top:38%;left:-10%;animation-duration:24s;"></div>
+        <div class="orb orb-blue" style="width:260px;height:260px;bottom:4%;right:10%;animation-duration:28s;"></div>
+
+        <!-- Encabezado -->
+        <div class="relative z-10 text-center space-y-4 mb-6">
+            <h1 class="reveal text-4xl font-extrabold text-white">Trayectoria y <span class="text-animate">Experiencia en Organizaciones</span></h1>
+            <p class="reveal d1 text-slate-400 max-w-2xl mx-auto">Historial detallado de mis roles directivos, asesorías estratégicas, gestión financiera y liderazgo en capítulos estudiantiles y asociaciones.</p>
+        </div>
+
+        <!-- Rol actual NASA -->
+        <div class="reveal relative z-10 card-animated bg-cardBg border border-primary/40 p-8 rounded-3xl space-y-3 shadow-xl">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+                <h3 class="text-xl font-bold text-white">NASA International Space Apps Challenge Arequipa</h3>
+                <span class="pulse-cta text-xs font-semibold px-3 py-1 bg-primary/20 text-primary rounded-full w-fit">Sep 2026 - Presente</span>
+            </div>
+            <p class="text-primary font-medium text-sm">Coordinador de Logística</p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+                Responsable de la planificación, coordinación y supervisión de la gestión logística integral del hackathon oficial de la NASA en Arequipa: asignación de espacios, control de suministros, equipamiento técnico, gestión de patrocinadores y optimización de recursos para garantizar el desarrollo eficiente del evento.
+            </p>
+        </div>
+
+        <!-- A3MOSPHERA + IEEE -->
+        <div class="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="reveal d1 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl space-y-3">
+                <span class="text-xs font-semibold px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full">Jul 2026 - Presente</span>
+                <h4 class="text-lg font-bold text-white">A3MOSPHERA</h4>
+                <p class="text-primary text-xs font-semibold">Vicepresidente Ejecutivo</p>
+                <p class="text-slate-300 text-xs leading-relaxed mt-2">
+                    Supervisión transversal de las actividades e iniciativas de la Asociación, articulando los ejes de intervención (Educación, Deporte, Infraestructura, Arte y Cultura, Ambiente y Economía). Soporte estratégico a Presidencia y al Comité Consultivo en la coordinación de proyectos institucionales.
+                </p>
+            </div>
+            <div class="reveal d2 card-animated bg-cardBg border border-slate-800 p-8 rounded-3xl space-y-3">
+                <span class="text-xs font-semibold px-3 py-1 bg-indigo-500/20 text-indigo-400 rounded-full">Jun 2026 - Presente</span>
+                <h4 class="text-lg font-bold text-white">IEEE MTT-S Student Branch Chapter (UNSA)</h4>
+                <p class="text-primary text-xs font-semibold">Asesor de Desarrollo Organizativo</p>
+                <p class="text-slate-300 text-xs leading-relaxed mt-2">
+                    Acompañamiento estratégico al equipo de liderazgo de la Microwave Theory and Technology Society en su estructuración organizacional: definición de ejes de operación, delimitación de responsabilidades y consolidación de actividades técnicas y profesionales.
+                </p>
+            </div>
+        </div>
+
+        <!-- Liderazgo directivo: línea de tiempo -->
+        <section class="relative z-10 bg-cardBg border border-slate-800 p-8 rounded-3xl space-y-8">
+            <h3 class="reveal text-2xl font-bold text-white">Liderazgo Directivo en Capítulos y Asociaciones</h3>
+
+            <div class="border-l-2 border-primary/40 ml-3 space-y-8">
+                <!-- IDEA -->
+                <div class="reveal d1 timeline-item pl-6 space-y-3">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+                        <h4 class="text-lg font-bold text-white">IDEA - UNSA Student Chapter</h4>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-800 text-slate-300 rounded-full w-fit">Ene 2025 - Presente</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="reveal d1 bg-slate-900 border border-slate-800 p-4 rounded-xl"><strong class="text-primary">Coordinador Financiero (Ene 2026 - Presente):</strong> seguimiento financiero, control de registros contables institucionales y elaboración de proyecciones presupuestarias para eventos programados.</li>
+                        <li class="reveal d2 bg-slate-900 border border-slate-800 p-4 rounded-xl"><strong class="text-primary">Director de Logística y Finanzas (Jun 2025 - Ene 2026):</strong> organización y ejecución logística de actividades académicas y talleres; administración de materiales, recursos humanos y proveedores.</li>
+                        <li class="reveal d3 bg-slate-900 border border-slate-800 p-4 rounded-xl"><strong class="text-primary">Subdirector de Proyectos y Eventos (Abr 2025 - Jun 2025):</strong> planificación, coordinación y seguimiento de actividades; facilitación de comunicaciones internas para la ejecución de eventos.</li>
+                        <li class="reveal d4 bg-slate-900 border border-slate-800 p-4 rounded-xl"><strong class="text-primary">Voluntario (Ene 2025 - Abr 2025):</strong> tareas operativas y de apoyo logístico durante eventos institucionales del capítulo.</li>
+                    </ul>
+                </div>
+
+                <!-- ANEIMERA -->
+                <div class="reveal d2 timeline-item pl-6 space-y-3">
+                    <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
+                        <h4 class="text-lg font-bold text-white">ANEIMERA - Universidad Nacional de San Agustín</h4>
+                        <span class="text-xs font-semibold px-3 py-1 bg-slate-800 text-slate-300 rounded-full w-fit">Feb 2024 - Abr 2026</span>
+                    </div>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="reveal d1 bg-slate-900 border border-slate-800 p-4 rounded-xl"><strong class="text-indigo-400">Vicepresidente de Eventos (Abr 2025 - Abr 2026):</strong> dirección general del área de eventos: agenda institucional, congresos y actividades de impacto de la asociación.</li>
+                        <li class="reveal d2 bg-slate-900 border border-slate-800 p-4 rounded-xl"><strong class="text-indigo-400">Subdirector de Logística y Finanzas (Ene 2025 - Abr 2025):</strong> planificación de recursos materiales y financieros para actividades institucionales.</li>
+                        <li class="reveal d3 bg-slate-900 border border-slate-800 p-4 rounded-xl"><strong class="text-indigo-400">Miembro de Logística y Finanzas (Feb 2024 - Ene 2025):</strong> gestión de materiales y apoyo logístico continuo a las iniciativas de la asociación.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Otros cargos y membresías -->
+        <section class="relative z-10 space-y-6">
+            <h3 class="reveal text-2xl font-bold text-white">Otros Cargos, Consultorías y Membresías</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="reveal d1 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-teal-400 font-bold">Feb 2026 - Ago 2026</span>
+                    <h4 class="text-white font-bold">Presidente CONEA — Asociación Peruana de Ciencias Empresariales Internacional</h4>
+                    <p class="text-slate-400 text-xs">Dirección general de la asociación y representación institucional en Arequipa.</p>
+                </div>
+                <div class="reveal d2 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-teal-400 font-bold">Oct 2025 - May 2026</span>
+                    <h4 class="text-white font-bold">Coordinador de Logística y Presupuestos — Somos Decision</h4>
+                    <p class="text-slate-400 text-xs">Gestión logística integral y control presupuestal de iniciativas juveniles.</p>
+                </div>
+                <div class="reveal d3 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-teal-400 font-bold">Dic 2025 - Ene 2026</span>
+                    <h4 class="text-white font-bold">Coordinador de Alianzas — Impact Startup Competition (ISC UNSA)</h4>
+                    <p class="text-slate-400 text-xs">Gestión de relaciones colaborativas con organizaciones académicas y técnicas, y articulación de proyectos interinstitucionales.</p>
+                </div>
+                <div class="reveal d4 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-teal-400 font-bold">Abr 2026 - Jul 2026</span>
+                    <h4 class="text-white font-bold">Monitor CEPRUNSA — Universidad Nacional de San Agustín</h4>
+                    <p class="text-slate-400 text-xs">Apoyo académico y acompañamiento a postulantes del centro de preparación universitaria.</p>
+                </div>
+                <div class="reveal d5 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-teal-400 font-bold">Mar 2023 - Dic 2023</span>
+                    <h4 class="text-white font-bold">Profesor de Física y Química — I.E.P. Leonardo da Vinci (Arequipa)</h4>
+                    <p class="text-slate-400 text-xs">Planificación y dictado de clases a nivel escolar, diseño de evaluaciones y actividades didácticas.</p>
+                </div>
+                <div class="reveal d6 card-animated bg-cardBg border border-slate-800 p-6 rounded-2xl space-y-2">
+                    <span class="text-xs text-teal-400 font-bold">Membresías activas</span>
+                    <h4 class="text-white font-bold">Comunidad Técnica y Científica</h4>
+                    <p class="text-slate-400 text-xs">Comunidad Arequipeña de Ciberseguridad (CAUC), ACIAMI-UNSA (equipo de marketing) e IEEE Women in Engineering (UNSA).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-cardBg border-t border-slate-800 py-8 text-center text-xs text-slate-500">
+        © 2026 Santiago Lope. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
