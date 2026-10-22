@@ -69,7 +69,7 @@
                 "📌 *Área de interés:* " + servicio + "\n\n" +
                 "📝 *Mensaje:*\n" + mensaje;
 
-            var phone = "51937497557"; // Número oficial de Santiago Lope
+            var phone = "51907742788"; // Número oficial de Santiago Lope
             var waUrl = "https://api.whatsapp.com/send?phone=" + phone + "&text=" + encodeURIComponent(text);
 
             if (statusDiv) {
